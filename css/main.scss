@@ -1,0 +1,86 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$white-color:     #F5F5F5;
+$brown-color:     #342727;
+$purple-color:    #A98AA8;
+
+body {
+  background-color: $white-color;
+}
+
+
+// Navbar
+.navbar-height .navbar-padding-vertical {
+  height: 60px;
+}
+
+.navbar {
+  background:    $white-color;
+  border-top:    4px solid $purple-color;
+  border-bottom: none;
+
+  .navbar-brand {
+    color: $brown-color;
+    font-size: 24px;
+  }
+}
+
+.navbar-default {
+  .navbar-nav {
+    li {
+      a {
+        color: $brown-color;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border: 2px solid $brown-color;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $brown-color;
+}
+
+
+// Front page
+
+.container {
+  width: auto;
+  max-width: 680px;
+  margin-top: 100px;
+  padding: 0 15px;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+h1 {
+  background-color: #342727;
+  color: #fdfdfd;
+  margin-left: 20px;
+  padding-left: 32px;
+}
+
+h2 {
+  background-color: #342727;
+  color: #fdfdfd;
+  padding-left: 8px;
+}
+
+h3 {
+  background-color: #342727;
+  color: #fdfdfd;
+  padding-left: 8px;
+}
+
+h4 {
+  background-color: #342727;
+  color: #fdfdfd;
+}
