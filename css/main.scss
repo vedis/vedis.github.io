@@ -7,19 +7,26 @@ $white-color:     #F5F5F5;
 $brown-color:     #342727;
 $purple-color:    #A98AA8;
 
+$blue-color:      #96C0CE;
+$grey-color:      #74828F;
+$dark-grey-color: #525564;
+
 body {
   background-color: $white-color;
+  a {
+    color: $blue-color;
+  }
 }
 
 
-// Navbar
+Navbar
 .navbar-height .navbar-padding-vertical {
-  height: 60px;
+  height: 40px;
 }
 
 .navbar {
   background:    $white-color;
-  border-top:    4px solid $purple-color;
+  border-top:    4px solid $blue-color;
   border-bottom: none;
 
   .navbar-brand {
@@ -62,25 +69,50 @@ body {
 }
 
 h1 {
-  background-color: #342727;
+  background-color: $dark-grey-color;
   color: #fdfdfd;
   margin-left: 20px;
   padding-left: 32px;
 }
 
 h2 {
-  background-color: #342727;
+  background-color: $grey-color;
   color: #fdfdfd;
   padding-left: 8px;
 }
 
 h3 {
-  background-color: #342727;
   color: #fdfdfd;
   padding-left: 8px;
 }
 
 h4 {
-  background-color: #342727;
+  background-color: $grey-color;
   color: #fdfdfd;
+}
+
+
+.header-title {
+  font-size: 24px;
+  color: $grey-color;
+}
+
+.portfolio-project-container {
+  ul {
+    list-style-type: none;
+  }
+
+  h3 {
+    color: $grey-color;
+  }
+
+  ul li :hover {
+    background-color: white;
+  }
+}
+
+.portfolio-cell {
+  min-height: 70px;
+  border-left: 2px solid $grey-color;
+  margin-top: 40px;
 }
