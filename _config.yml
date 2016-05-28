@@ -1,4 +1,8 @@
-title: OMG
+title: Volkan Edis
 email: mail@vedis.io
 baseurl: ""
 url: "http://vedis.io"
+
+sass:
+  sass_dir: _sass
+include: ['_pages']
